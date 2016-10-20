@@ -1,11 +1,6 @@
 angular.module('angularFriends').controller('FriendController', function($scope){
-//	$scope.sort;
-//	$scope.ascendDescend;
-	
-	
 
-	
-	
+
 	$scope.friends = [
   {
     "name": "Preston McNeil",
