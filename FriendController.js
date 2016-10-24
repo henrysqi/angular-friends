@@ -1,6 +1,5 @@
 angular.module('angularFriends').controller('FriendController', function($scope){
 
-
 	$scope.friends = [
   {
     "name": "Preston McNeil",
@@ -433,6 +432,27 @@ angular.module('angularFriends').controller('FriendController', function($scope)
     "$$hashKey": "02U"
   }
 	];
+	
+var changeCurrentLocation = function(){	
+	for (var i = 0; i < $scope.friends.length; i++){
+		if ($scope.friends[i].current_location === null){
+			$scope.friends[i].current_location = {
+				"city": "",
+				"state": "",
+				"country": "",
+				"zip": "",
+				"latitude": "",
+				"longitude": "",
+				"id": "",
+				"name": ""
+			}
+		}
+	}
+}
+
+changeCurrentLocation();
+	
+	
 	
 });
 
